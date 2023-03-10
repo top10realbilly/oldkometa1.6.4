@@ -22,7 +22,7 @@ local done = true
 -- Script tables
 
 local temptable = {
-    version = "1.6.4",
+    version = "4.2.0",
     MondoCollectTokens = false,
     blackfield = "Ant Field",
     LastFieldColor = 'White',
@@ -1298,7 +1298,7 @@ function UseDispensers()
     end
 end
 
-local ui = library.new(true, "kometa ☄️ | v"..temptable.version)
+local ui = library.new(true, "old kometa 🔥 | v"..temptable.version)
 ui.ChangeToggleKey(Enum.KeyCode.Semicolon)
 
 local hometab = ui:Category("Home")
