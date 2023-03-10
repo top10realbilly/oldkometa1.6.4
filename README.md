@@ -1,2 +1,2 @@
 # oldkometa1.6.4
-oldkometa
+An old version of kometa, you can use it if you want.
