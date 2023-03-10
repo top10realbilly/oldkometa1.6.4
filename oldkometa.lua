@@ -2042,10 +2042,9 @@ task.spawn(function() while task.wait(1) do
     -- if kometa.toggles.clock then game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer("Wealth Clock") end
     -- if kometa.toggles.freeantpass then game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer("Free Ant Pass Dispenser") end
     -- if kometa.toggles.freerobopass then game:GetService("ReplicatedStorage").Events.ToyEvent:FireServer("Free Robo Pass Dispenser") end
-    game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["ile zdobyles honey xd"].Title.Text = "Gained Honey: "..api.suffixstring(temptable.honeycurrent - temptable.honeystart)
-    game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["honey per godzina"].Title.Text = "Honey Per Hour: "..api.suffixstring((temptable.honeycurrent - temptable.honeystart)/(temptable.stats.runningfor/3600))
-    game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["honey per dzien11!111"].Title.Text = "Honey Per Hour: "..api.suffixstring((temptable.honeycurrent - temptable.honeystart)/(temptable.stats.runningfor/86400))
-    game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["ile grasz wbss xd"].Title.Text = "Elapsed Time: "..api.toHMS(temptable.stats.runningfor)
+    game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["Gained Honey"].Title.Text = "Gained Honey: "..api.suffixstring(temptable.honeycurrent - temptable.honeystart)
+    game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["Honey Per Hour"].Title.Text = "Honey Per Hour: "..api.suffixstring((temptable.honeycurrent - temptable.honeystart)/(temptable.stats.runningfor/3600))
+    game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["Elapsed Time"].Title.Text = "Elapsed Time: "..api.toHMS(temptable.stats.runningfor)
     game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["Farmed Sprouts"].Title.Text = "Farmed Sprouts: "..temptable.stats.farmedsprouts
     game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["Killed Windy"].Title.Text = "Killed Windy: "..temptable.stats.killedwindy
     game.CoreGui.kometaUI.Container.Categories.Statistics:FindFirstChild("Statistics", true).Container["Killed Vicious"].Title.Text = "Killed Vicious: "..temptable.stats.killedvicious
