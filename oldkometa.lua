@@ -1587,7 +1587,7 @@ guisettings:Cheat("Dropdown", "GUI Options (Dropdown)", function(Option) if Opti
 --     end
 -- end)
 guisettings:Cheat("Checkbox", "RGB GUI", function(State)
-    if kometa.toggles.rgbui == false then
+    if kometa.toggles.rgbui == true then
         kometa.toggles.rgbui = true
             while kometa.toggles.rgbui do
                 for hue = 0, 255, 4 do
@@ -1600,7 +1600,7 @@ guisettings:Cheat("Checkbox", "RGB GUI", function(State)
             end
         else
         end
-        kometa.toggles.rgbui = false
+        kometa.toggles.rgbui = true
 end)
 guisettings:Cheat("ColorPicker", "GUI Color", function(Value) game:GetService("CoreGui").kometaUI.Container.BackgroundColor3 = Value end)
 guisettings:Cheat("Textbox", "GUI Transparency", function(Value)game:GetService("CoreGui").kometaUI.Container.BackgroundTransparency = Value for i,v in pairs(game:GetService("CoreGui").kometaUI.Container:GetChildren()) do    if v.Name == "Separator" then    v.BackgroundTransparency = Value end end	game:GetService("CoreGui").kometaUI.Container.Shadow.ImageTransparency = Value end, { placeholder = "between 0 and 1"})
