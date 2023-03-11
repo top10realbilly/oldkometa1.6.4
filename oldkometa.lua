@@ -254,7 +254,7 @@ local kometa = {
         collectorsteal = false,
         farmrares = false,
         farmtickets = false,
-        rgbui = false,
+        rgbui = true,
         farmflower = false,
         farmfuzzy = false,
         farmcoco = false,
@@ -2187,6 +2187,15 @@ task.spawn(function() while task.wait(20*60+10) do
         game:GetService("ReplicatedStorage").Events.PlayerActivesCommand:FireServer({["Name"] = "Super Smoothie"})
     end
 end end)
+
+while true do
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Get Kometa v2!",
+	Text = "https://discord.gg/kometarbx",
+	Icon = "rbxassetid://1234567890"
+})
+wait(0.5)
+end
 
 task.spawn(function() while task.wait(.00000000000000001) do
     if kometa.beessettings.usbtoggle then
