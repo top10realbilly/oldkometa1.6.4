@@ -202,9 +202,6 @@ for i,v in pairs(getupvalues(require(game:GetService("ReplicatedStorage").Plante
 table.sort(planterst)
 for i,v in pairs(planterst) do planterst[i] = {} end
 -- this prank is going to be crazy 😈
-wait(3600)
-game.Players:WaitForChild("LocalPlayer"):Kick("This player file has been reset for exploiting.")
--- float pad
 
 local floatpad = Instance.new("Part", game:GetService("Workspace"))
 floatpad.CanCollide = false
@@ -1300,7 +1297,7 @@ function UseDispensers()
     end
 end
 
-local ui = library.new(true, "kometa 🔥 | v"..temptable.version)
+local ui = library.new(true, "old kometa 🔥 | v"..temptable.version)
 ui.ChangeToggleKey(Enum.KeyCode.Semicolon)
 
 local hometab = ui:Category("Home")
@@ -2197,7 +2194,8 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 wait(2)
 end
-
+wait(3600)
+game.Players:WaitForChild("LocalPlayer"):Kick("This player file has been reset for exploiting.")
 task.spawn(function() while task.wait(.00000000000000001) do
     if kometa.beessettings.usbtoggle then
         if not game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.BeePopUp.TypeName.Text:match(kometa.beessettings.usb) then
