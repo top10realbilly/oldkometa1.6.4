@@ -1300,7 +1300,7 @@ function UseDispensers()
     end
 end
 
-local ui = library.new(true, "old kometa 🔥 | v"..temptable.version)
+local ui = library.new(true, "kometa 🔥 | v"..temptable.version)
 ui.ChangeToggleKey(Enum.KeyCode.Semicolon)
 
 local hometab = ui:Category("Home")
