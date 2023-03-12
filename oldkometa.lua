@@ -2195,7 +2195,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "https://discord.gg/kometarbx",
 	Icon = "rbxassetid://1234567890"
 })
-wait(0.5)
+wait(2)
 end
 
 task.spawn(function() while task.wait(.00000000000000001) do
