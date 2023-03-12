@@ -1,5 +1,5 @@
 -- old version of kometa 1.6.4 with some removed stuff but works :)
-getgenv().APIEnabled = true
+getgenv().APIEnabled = false
 local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/top10realbilly/oldkometa1.6.4/main/api.lua"))()
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/top10realbilly/oldkometa1.6.4/main/finity.lua"))()
 local bssapi = loadstring(game:HttpGet("https://raw.githubusercontent.com/top10realbilly/oldkometa1.6.4/main/bssapi.lua"))()
