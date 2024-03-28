@@ -2185,17 +2185,6 @@ task.spawn(function() while task.wait(20*60+10) do
         game:GetService("ReplicatedStorage").Events.PlayerActivesCommand:FireServer({["Name"] = "Super Smoothie"})
     end
 end end)
-
-while true do
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Get Kometa v2!",
-	Text = "https://discord.gg/kometarbx",
-	Icon = "rbxassetid://1234567890"
-})
-wait(2)
-end
-wait(3600)
-game.Players:WaitForChild("LocalPlayer"):Kick("This player file has been reset for exploiting.")
 task.spawn(function() while task.wait(.00000000000000001) do
     if kometa.beessettings.usbtoggle then
         if not game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.BeePopUp.TypeName.Text:match(kometa.beessettings.usb) then
